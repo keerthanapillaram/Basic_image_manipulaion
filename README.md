@@ -107,4 +107,28 @@ plt.show()
 
 ![image](https://github.com/user-attachments/assets/0e9f5d09-43d6-484f-b483-bf2b83d13425)
 
-Basic_image_manipulaion
+# Program
+```
+import cv2
+import matplotlib.pyplot as plt
+img = cv2.imread('newzealand.jpg')
+text = 'Newzealand boat'
+position = (50, 50)
+font = cv2.FONT_HERSHEY_SIMPLEX
+font_scale = 1
+color = (255, 255, 255)
+thickness = 2
+cv2.putText(img, text, position, font, font_scale, color, thickness)
+start = (330, 200)      
+stop = (420, 320)      
+rect_color = (255, 0, 255)
+rect_thickness = 10
+cv2.rectangle(img, start, stop, rect_color, rect_thickness)
+plt.figure(figsize=[12, 12])
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.axis('off')
+plt.show()
+```
+# OUTPUT
+
+![image](https://github.com/user-attachments/assets/bfef1c0a-6c10-4a06-8893-d00c636d0f4f)
