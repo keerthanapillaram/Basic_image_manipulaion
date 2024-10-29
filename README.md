@@ -1,5 +1,5 @@
 # Basic_image_Manipulation
-# # Program
+# Program
 ```
 import cv2
 import matplotlib.pyplot as plt
